@@ -8,5 +8,4 @@ buttons:
   -
     text: "No"
     url: what-are-you-sourcing
-previous:
 ---

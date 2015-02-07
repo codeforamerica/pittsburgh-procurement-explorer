@@ -18,7 +18,7 @@ layout: default
     {{ content }}
 
     {% for prev in page.origin %}
-      <a class="pure-button pure-button-primary button-xlarge" href="/{{ prev.url }}">{{ prev.text }}</a>
+      <p>Go back: <a href="/{{ prev.url }}">{{ prev.text }}</a></p>
     {% endfor %}
 
   </div>
