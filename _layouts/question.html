@@ -17,9 +17,9 @@ layout: default
 
     {{ content }}
 
-    {% if page.previous %}
-      <a class="pure-button pure-button-primary button-xlarge" href="/{{ page.previous.url }}">{{ page.previous.text }}</a>
-    {% endif %}
+    {% for prev in page.origin %}
+      <a class="pure-button pure-button-primary button-xlarge" href="/{{ prev.url }}">{{ prev.text }}</a>
+    {% endfor %}
 
   </div>
 
