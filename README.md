@@ -12,6 +12,6 @@ The tool is hosted on github pages, so deploying is as simple as pushing updates
 
 ### Future Plans
 
-[ ] Create a tree visualization of the process
-[ ] Add some copy to the terminating nodes about what each process type is or means
-[ ] Add links to other resources (about county/state process, contract lists, etc.)
++ [ ] Create a tree visualization of the process
++ [ ] Add some copy to the terminating nodes about what each process type is or means
++ [ ] Add links to other resources (about county/state process, contract lists, etc.)
