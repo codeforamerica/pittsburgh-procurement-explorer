@@ -1,0 +1,22 @@
+{
+  "name": "pittsburgh-procurement-explorer",
+  "version": "1.0.0",
+  "description": "Step through a series of questions to understand which process to use for purchasing in Pittsburgh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeforamerica/pittsburgh-procurement-explorer.git"
+  },
+  "author": "Ben Smithgall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeforamerica/pittsburgh-procurement-explorer/issues"
+  },
+  "homepage": "https://github.com/codeforamerica/pittsburgh-procurement-explorer",
+  "devDependencies": {
+    "bower": "^1.3.12"
+  }
+}

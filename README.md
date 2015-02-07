@@ -6,6 +6,18 @@ The Pittsburgh procurement explorer tool is an exploratory application built by 
 
 pittsburgh-procurement-explorer is a Jekyll site. For information on getting started with Jekyll, please refer to the [howto](https://github.com/codeforamerica/howto/blob/master/Jekyll.md).
 
+The site also uses [bower](http://bower.io/) to manage javascript dependencies. Bower is a package manager for the web. Bower can be installed using npm (detailed instructions for installing npm can be found [here](https://github.com/codeforamerica/howto/blob/master/Node.js.md)). To install bower, simply type
+
+    npm install
+
+Once bower installed, you can install javascript dependencies by running
+
+    bower install
+
+Once everything is installed, you can get started by running
+
+    jekyll serve
+
 ### Deployment
 
 The tool is hosted on github pages, so deploying is as simple as pushing updates to the `gh-pages` branch. Because standard HTML sites are valid Jekyll, [deploying the built site directly](http://www.aymerick.com/2014/07/22/jekyll-github-pages-bower-bootstrap.html) is encouraged.
