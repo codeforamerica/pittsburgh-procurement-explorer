@@ -1,7 +1,6 @@
 ---
 layout: question
 title: "Is it on contract"
-display_title: "Explore"
 buttons:
   -
     text: "Yes"

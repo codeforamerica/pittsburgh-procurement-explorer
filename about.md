@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This is a click-through explorer of the different procurement processes available to civil servants in the City of Pittsburgh. Starting with a question of whether or not your item is on contract, you click through until you figure out which process you are supposed to use for filing a bid.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+A tree visualization of these processes is also in development, and a link will be made available here when it is finished.
