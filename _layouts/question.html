@@ -11,14 +11,14 @@ layout: default
   <div class="post-content">
     <div class="btn-group">
       {% for button in page.buttons %}
-        <a class="pure-button pure-button-primary button-xlarge" href="/{{ button.url }}">{{ button.text }}</a>
+        <a class="pure-button pure-button-primary button-xlarge" href="{{ site.baseurl }}/{{ button.url }}">{{ button.text }}</a>
       {% endfor %}
     </div>
 
     {{ content }}
 
     {% for prev in page.origin %}
-      <p>Go back: <a href="/{{ prev.url }}">{{ prev.text }}</a>, or go to <a href="/">the beginning</a>.</p>
+      <p>Go back: <a href="{{ site.baseurl }}/{{ prev.url }}">{{ prev.text }}</a>, or go to <a href="{{ site.baseurl }}/">the beginning</a>.</p>
     {% endfor %}
 
   </div>
