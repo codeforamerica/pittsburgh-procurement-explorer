@@ -17,9 +17,15 @@ layout: default
 
     {{ content }}
 
-    {% for prev in page.origin %}
-      <p>Go back: <a href="{{ site.baseurl }}/{{ prev.url }}">{{ prev.text }}</a>, or go to <a href="{{ site.baseurl }}/">the beginning</a>.</p>
-    {% endfor %}
+    {% if page.origin %}
+      <p>
+        Go back: <a href="/{{ page.origin['url'] }}">{{ page.origin['text'] }}</a>, or go to <a href="/">the beginning</a>.
+      </p>
+    {% endif %}
+
+    {% if page.include_chart %}
+      {% include tree-chart.html %}
+    {% endif %}
 
   </div>
 
