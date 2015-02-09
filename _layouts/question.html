@@ -13,7 +13,7 @@ layout: default
       {% for button in page.buttons %}
         <a
           class="pure-button pure-button-primary button-xlarge"
-          href="{% if button.external == blank %}{{ site.baseurl }}/{% endif %}{{ button.url }}"
+          href="{% if button.external == nil %}{{ site.baseurl }}/{% endif %}{{ button.url }}"
         >
           {{ button.text }}
         </a>
