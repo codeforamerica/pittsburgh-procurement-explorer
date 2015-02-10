@@ -6,7 +6,8 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+$base-font-family: 'PT Sans', sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -28,6 +29,8 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 $footer-height:    140px;
+
+$body-bg:          #F2F2F2;
 
 
 // Using media queries with like this:
