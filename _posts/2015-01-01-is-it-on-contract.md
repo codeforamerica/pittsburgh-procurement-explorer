@@ -12,7 +12,7 @@ buttons:
   -
     text: "I Don't Know"
     external: true
-    url: "http://young-scrubland-2359.herokuapp.com/explore/"
+    url: "http://wexplorer-pittsburgh.herokuapp.com/explore/"
 ---
 
 <p>Go back: <a href="{{ site.baseurl }}/">Getting started</a>.</p>
