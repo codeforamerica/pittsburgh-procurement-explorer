@@ -162,7 +162,8 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit * 2.5 0;
+    padding-top: $spacing-unit * 2.5;
+    padding-bottom: $spacing-unit / 2;
 }
 
 .page-heading {

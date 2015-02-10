@@ -9,6 +9,16 @@ layout: default
   </div>
 
   <div class="post-content">
+
+    {% for item in page.pre_button_content %}
+      {% if item.title %}
+        <h3>{{ item.title }}</h3>
+      {% endif %}
+      <p>
+        {{ item.content }}
+      </p>
+    {% endfor %}
+
     <div class="btn-group">
       {% for button in page.buttons %}
         <a

@@ -1,6 +1,6 @@
 ---
 layout: question
-title: "Will it be multiple purchases or uses over time?"
+title: "Will there be multiple purchases of this item over time?"
 buttons:
   -
     text: "Yes"

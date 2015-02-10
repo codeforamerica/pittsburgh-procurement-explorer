@@ -10,6 +10,7 @@ dl, dd, ol, ul, figure {
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 /**
@@ -157,14 +158,17 @@ pre {
 .page-wrapper {
     min-height: 100%;
     margin-bottom: -$footer-height;
+    padding-bottom: $footer-height;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.page-wrapper:after {
-    display: block;
-}
-
-.footer, .page-wrapper:after {
+.footer {
     height: $footer-height;
+    position: relative;
+    z-index: 1;
 }
 
 /**
