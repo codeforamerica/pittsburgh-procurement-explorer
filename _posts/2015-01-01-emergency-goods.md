@@ -10,6 +10,6 @@ buttons:
     url: over-30-thousand
 origin:
   -
-    text: "Is the item's cost under $2000?"
+    text: "Is the item's cost under $2,000?"
     url: "goods-services"
 ---
