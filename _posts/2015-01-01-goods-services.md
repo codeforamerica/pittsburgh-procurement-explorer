@@ -1,6 +1,6 @@
 ---
 layout: question
-title: "Is the item's cost under $2,000?"
+title: "Is the item's cost under $2000?"
 buttons:
   -
     text: "Yes"
