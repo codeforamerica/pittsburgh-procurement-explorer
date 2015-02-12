@@ -135,6 +135,10 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
+.footer-text {
+    font-size: $small-font-size;
+}
+
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
