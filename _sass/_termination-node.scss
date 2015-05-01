@@ -1,0 +1,24 @@
+.callout-title {
+  // font-variant: small-caps;
+  font-weight: bold;
+}
+
+.left-content-description {
+
+  padding-bottom: 20px;
+}
+
+.step-by-step-walkthrough {
+  .step-title {
+
+  }
+
+  .step-body {
+    .step-list {
+
+      tr {
+        border: 1px solid black;
+      }
+    }
+  }
+}
