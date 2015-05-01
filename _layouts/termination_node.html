@@ -9,86 +9,98 @@ layout: default
   </div>
 
   <div class="post-content">
+    <div class="row">
 
-    <div class="left-content-pane">
+      <div class="left-content-pane">
 
-      <div class="left-content-description">
-        <p class="callout-title">What is this?</p>
+        <div class="left-content-description">
+          <p class="callout-title">What is this?</p>
 
-        {{ page.left_content_description }}
+          {{ page.left_content_description }}
+        </div>
+
+        <div class="step-by-step-walkthrough">
+          <p class="callout-title">What you'll need:</p>
+          <ol>
+          {% for step in page.steps %}
+            <li>
+              <div class="step-title"><h3>{{ step.title }}</h3></div>
+
+              <div class="step-body">
+
+                {% if step.format == 'list' %}
+                  <table class="step-list">
+                    <tbody>
+                    {% for item in step.items %}
+                      <tr class="step-list-item"><td>{{ item.item }}</td></tr>
+                    {% endfor %}
+                    </tbody>
+                  </table>
+
+                {% elsif step.format == 'infoboxes' %}
+
+                  <table class="step-infoboxes">
+                    <tbody>
+                    {% for item in step.items %}
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>{{ item.item }}</td>
+                        {% if item.tooltip %}
+                        <td>{{ item.tooltip }}</td>
+                        {% endif %}
+                      </tr>
+                    {% endfor %}
+                    </tbody>
+                  </table>
+
+                {% elsif step.format == 'extlink' %}
+
+                  <p class="extlink-description">
+                    {{ step.extlink_description }}
+                  </p>
+
+                  <a
+                    class="pure-button pure-button-primary button-xlarge"
+                    href="{% if step.external == nil %}{{ site.baseurl }}/{% endif %}{{ step.url }}"
+                    target="_blank"
+                  >
+                    {{ step.button_text }}
+                  </a>
+
+                {% endif %}
+              </div>
+            </li>
+          {% endfor %}
+          </ol>
+        </div>
+
+        <div class="btn-group">
+          {% for button in page.buttons %}
+            <a
+              class="pure-button pure-button-primary button-xlarge"
+              href="{% if button.external == nil %}{{ site.baseurl }}/{% endif %}{{ button.url }}"
+            >
+              {{ button.text }}
+            </a>
+          {% endfor %}
+        </div>
+
+        {{ content }}
+
       </div>
-
-      <div class="step-by-step-walkthrough">
-        <p class="callout-title">What you'll need:</p>
-        <ol>
-        {% for step in page.steps %}
-          <li>
-            <div class="step-title"><h3>{{ step.title }}</h3></div>
-
-            <div class="step-body">
-
-              {% if step.format == 'list' %}
-                <table class="step-list">
-                  <tbody>
-                  {% for item in step.items %}
-                    <tr class="step-list-item"><td>{{ item.item }}</td></tr>
-                  {% endfor %}
-                  </tbody>
-                </table>
-
-              {% elsif step.format == 'infoboxes' %}
-
-                <table class="step-infoboxes">
-                  <tbody>
-                  {% for item in step.items %}
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>{{ item.item }}</td>
-                      {% if item.tooltip %}
-                      <td>{{ item.tooltip }}</td>
-                      {% endif %}
-                    </tr>
-                  {% endfor %}
-                  </tbody>
-                </table>
-
-              {% elsif step.format == 'extlink' %}
-
-                <p class="extlink-description">
-                  {{ step.extlink_description }}
-                </p>
-
-                <a
-                  class="pure-button pure-button-primary button-xlarge"
-                  href="{% if step.external == nil %}{{ site.baseurl }}/{% endif %}{{ step.url }}"
-                >
-                  {{ step.button_text }}
-                </a>
-
-              {% endif %}
-            </div>
+      <div class="right-content-pane">
+        <p class="callout-title">What to expect:</p>
+        <ul>
+        {% for node in page.timeline %}
+          <li class="timeline-node">
+            {% if node.title %}{{ node.title }}<br>{% endif %}
+            <span class="timeline-node-body">{{ node.body }}</span>
           </li>
         {% endfor %}
-        </ol>
+        </ul>
       </div>
 
-      <div class="btn-group">
-        {% for button in page.buttons %}
-          <a
-            class="pure-button pure-button-primary button-xlarge"
-            href="{% if button.external == nil %}{{ site.baseurl }}/{% endif %}{{ button.url }}"
-          >
-            {{ button.text }}
-          </a>
-        {% endfor %}
-      </div>
-
-      {{ content }}
-
     </div>
-    <div class="right-content-pane">
-    </div>
-
 
     {% for prev in page.origin %}
       <p>Go back: <a href="{{ site.baseurl }}/{{ prev.url }}">{{ prev.text }}</a>, or go to <a href="{{ site.baseurl }}/">the beginning</a>.</p>

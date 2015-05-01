@@ -39,5 +39,23 @@ steps:
     extlink_description: "Once you're ready, fill in the form and upload required documents at the link below"
     url: "https://teampgh.typeform.com/to/im7FNa"
     button_text: Start PSA Request Form
+timeline:
+  -
+    title: "Start of process"
+    body: "Prepare documents and information"
+  -
+    body: "Complete and submit request form"
+  -
+    body: "Your request is submitted to a solicitor"
+  -
+    body: "Solicitor approves request and asks you to make changes"
+  -
+    body: "You send approved professional services agreement to awarded vendor for approval"
+  -
+    body: "Vendor's legal department and City Solicitor agree on a final Professional Services Agreement. Vendor signs three hard copies and sends them to you"
+  -
+    body: "You gather signatures from your Department Director, the Director of Finance, the Director of OMB, and your solicitor before you submit the agreement to the Controller's Office"
+  -
+    body: "Once the City Controller approves, your PSA is finalized, and you can begin to work with your awarded vendor"
 ---
 

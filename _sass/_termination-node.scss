@@ -1,11 +1,38 @@
+.row {
+  display: table;
+  width: 100%
+}
+
+.left-content-pane,
+.right-content-pane {
+  float: left;
+  position: relative;
+}
+
+.left-content-pane {
+  left: 0;
+  width: 60%;
+}
+
+.right-content-pane {
+  margin-left: 30px;
+  width: 35%;
+}
+
 .callout-title {
-  // font-variant: small-caps;
   font-weight: bold;
 }
 
 .left-content-description {
-
   padding-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #eee;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 .step-by-step-walkthrough {
@@ -14,11 +41,41 @@
   }
 
   .step-body {
-    .step-list {
+    .step-list,
+    .step-infoboxes {
 
-      tr {
-        border: 1px solid black;
+
+      tr:nth-of-type(odd) {
+        background-color: #bbb;
+        line-height: 1.428571429;
+        vertical-align: top;
+      }
+
+      tr:first-child {
+        td {
+          border-top: 0;
+        }
+      }
+
+      td {
+        // border-top: 1px solid black;
+        vertical-align: top;
+        padding: 3px;
+      }
+
+      .step-list-item {
+        td {
+          padding-left: 10px;
+        }
       }
     }
   }
+}
+
+.timeline-node {
+  margin-bottom: $spacing-unit;
+}
+
+.timeline-node-body {
+  font-size: $small-font-size
 }
