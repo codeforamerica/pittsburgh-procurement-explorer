@@ -41,7 +41,6 @@ steps:
     button_text: Start PSA Request Form
 timeline:
   -
-    title: "Start of process"
     body: "Prepare documents and information"
   -
     body: "Complete and submit request form"
