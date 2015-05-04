@@ -6,8 +6,8 @@
 
 
 // Our variables
-@import url(http://fonts.googleapis.com/css?family=PT+Sans);
-$base-font-family: 'PT Sans', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+$base-font-family: 'Open Sans', sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -23,14 +23,14 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1000px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
 $footer-height:    71px;
 
-$body-bg:          #F2F2F2;
+$body-bg:          #fff;
 
 
 // Using media queries with like this:
@@ -53,5 +53,6 @@ $body-bg:          #F2F2F2;
         "base",
         "layout",
         "syntax-highlighting",
-        "buttons"
+        "buttons",
+        "termination-node"
 ;
