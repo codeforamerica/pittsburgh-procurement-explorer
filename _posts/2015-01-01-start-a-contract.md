@@ -51,7 +51,7 @@ timeline:
   -
     body: "You send approved professional services agreement to awarded vendor for approval"
   -
-    body: "Vendor's legal department and City Solicitor agree on a final Professional Services Agreement. Vendor signs three hard copies and sends them to you"
+    body: "Vendor's legal department and City Solicitor agree on a final Professional Services Agreement. Vendor signs four hard copies and sends them to you"
   -
     body: "You gather signatures from your Department Director, the Director of Finance, the Director of OMB, and your solicitor before you submit the agreement to the Controller's Office"
   -
